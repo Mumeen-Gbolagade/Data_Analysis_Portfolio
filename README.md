@@ -5,7 +5,7 @@
 ![SQL](https://img.shields.io/badge/SQL-SQLite%20%7C%20PostgreSQL-1E3D71) ![Python](https://img.shields.io/badge/Python-numpy%20%7C%20pandas-1E3D71) ![Excel](https://img.shields.io/badge/Excel-Dashboards-1E3D71) ![Model](https://img.shields.io/badge/Churn%20model-AUC%200.815-22BFD6) ![Validation](https://img.shields.io/badge/Validation-19%20of%2019%20passed-2E7D5B)
 
 > [!NOTE]
-> **Case study.** The data is modelled on the business of an IoT hardware and RMS cloud-subscription company, Teltonika IoT Group (Vilnius, Lithuania), to demonstrate the methods used. **It is not Teltonika's own data or results**, and the project is not affiliated with or endorsed by Teltonika.
+> **Case study.** The data is modelled on the business of an IoT hardware and RMS cloud-subscription company, Teltonika IoT Group (Vilnius, Lithuania), to demonstrate the methods used. * This Data modelled based on case study Project only. 
 
 ![Executive dashboard](images/executive_dashboard.png)
 
