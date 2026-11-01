@@ -11,18 +11,6 @@
 
 ---
 
-## Results at a glance
-
-| Workstream | Headline result | Target | Status |
-|---|---|---|---|
-| **1 · Reporting automation** | Reporting effort cut **60%**: 1,552 → 613 hours a year (939 hours, ≈ €51.6K of analyst time) | ≥ 50% | ✅ On target |
-| | Month-end pack published in **2.3 days** instead of 7.3 | ≤ 4 days | ✅ On target |
-| **2 · Revenue leakage** | Audit of **600 accounts** found **€125,485** of leakage in 132 cases on 123 accounts | ≥ €100K | ✅ On target |
-| | **€120,625** recovered through billing corrections and dunning, a **96%** recovery rate | €100K · 60% | ✅ On target |
-| | Billing accuracy **96.7%** (from 90.8%) | 97% | 🟠 Close |
-| **3 · Churn prediction** | Hold-out **AUC 0.815**; top 20% of risk scores catch **53%** of churners | AUC ≥ 0.75 | ✅ On target |
-| | Top risk decile churns at **56%** vs 16% average; retention prize **€177K/yr** (scenario) | – | 📌 Test before claiming |
-
 ---
 
 ## Contents
@@ -41,6 +29,18 @@
 13. [Limitations](#13-limitations)
 
 ---
+## Results at a glance
+
+| Workstream | Headline result | Target | Status |
+|---|---|---|---|
+| **1 · Reporting automation** | Reporting effort cut **60%**: 1,552 → 613 hours a year (939 hours, ≈ €51.6K of analyst time) | ≥ 50% | ✅ On target |
+| | Month-end pack published in **2.3 days** instead of 7.3 | ≤ 4 days | ✅ On target |
+| **2 · Revenue leakage** | Audit of **600 accounts** found **€125,485** of leakage in 132 cases on 123 accounts | ≥ €100K | ✅ On target |
+| | **€120,625** recovered through billing corrections and dunning, a **96%** recovery rate | €100K · 60% | ✅ On target |
+| | Billing accuracy **96.7%** (from 90.8%) | 97% | 🟠 Close |
+| **3 · Churn prediction** | Hold-out **AUC 0.815**; top 20% of risk scores catch **53%** of churners | AUC ≥ 0.75 | ✅ On target |
+| | Top risk decile churns at **56%** vs 16% average; retention prize **€177K/yr** (scenario) | – | 📌 Test before claiming |
+
 
 ## 1. Business problem
 
