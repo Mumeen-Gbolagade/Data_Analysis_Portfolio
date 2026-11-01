@@ -102,9 +102,9 @@ Ten KPIs, each with a definition, baseline, target, owner and review cycle (work
 |---|---|---|
 | **1. Define** | Business context, problems and SMART objectives per workstream | Excel `01_Problem_Objectives` |
 | **2. Set KPIs** | 10 KPIs with baseline, target, owner and review cycle | Excel `02_KPI_Framework` |
-| **3. Load and clean** | Staging tables; phase labels standardised; text-stored numbers typed; leakage rules applied per account; customers scored | [`sql/01`](sql/01_create_tables.sql), [`sql/02`](sql/02_clean_transform.sql) |
-| **4. Check data quality** | 8 checks: counts, duplicate keys, catalogue coverage, referential integrity, rules-vs-log reconciliation, status completeness, value ranges, Train/Test balance | [`sql/03`](sql/03_data_quality_checks.sql) · [log](docs/data_quality_log.md) |
-| **5. Analyse** | Time study · contract-vs-billing audit and recovery tracking · logistic-regression churn model with lift and scenario | [`sql/04`](sql/04_reporting_automation.sql)–[`07`](sql/07_kpi_tracker.sql) · [`python/01`](python/01_train_churn_model.py) |
+| **3. Load and clean** | Staging tables; phase labels standardised; text-stored numbers typed; leakage rules applied per account; customers scored | [`01`](01_create_tables.sql), [`02`](02_clean_transform.sql) |
+| **4. Check data quality** | 8 checks: counts, duplicate keys, catalogue coverage, referential integrity, rules-vs-log reconciliation, status completeness, value ranges, Train/Test balance | [`03`](sql/03_data_quality_checks.sql) · [log](docs/data_quality_log.md) |
+| **5. Analyse** | Time study · contract-vs-billing audit and recovery tracking · logistic-regression churn model with lift and scenario | [`04`](04_reporting_automation.sql)–[`07`](07_kpi_tracker.sql) · [`python/01`](python/01_train_churn_model.py) |
 | **6. Visualise** | Executive dashboard and revenue leakage dashboard, all linked to live formulas | [`excel/`](excel/) |
 | **7. Recommend and adapt** | Six actions tied to evidence, KPI and owner; re-prioritised by business strategy | Excel `09`, `10` |
 | **8. Validate** | 19 pipeline figures checked against the workbook; SQL run on SQLite and PostgreSQL | [`python/03`](python/03_validate.py) · [results](docs/validation_results.md) |
