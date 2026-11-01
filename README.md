@@ -257,8 +257,6 @@ python python/03_validate.py            # checks results against the workbook
 **Workbook tabs:** `00_Read_Me` · `01_Problem_Objectives` · `02_KPI_Framework` · `03_Dashboard` · `03B_Leakage_Dashboard` · `04_Reporting_Time` · `05_Revenue_Leakage` · `06_Recovery_Log` · `07_Churn_Model` · `08_KPI_Tracker` · `09_Recommendations` · `10_Strategy_Playbook` · `11_Validation` · `12_Data_Dictionary` · `99_Chart_Data`
 
 ## 13. Limitations
-
-- **Case-study data.** The results show the method, not a real company's outcomes.
 - **Before/after is not proof of cause.** Other changes happened during the project period; billing accuracy and churn need controlled comparisons before results are attributed.
 - **The retention scenario is an assumption** (20% save rate) and must be tested against a control group.
 - The churn model is a simple, explainable baseline; it should be retrained quarterly and monitored for drift.
