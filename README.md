@@ -5,11 +5,7 @@
 ![SQL](https://img.shields.io/badge/SQL-SQLite%20%7C%20PostgreSQL-1E3D71) ![Python](https://img.shields.io/badge/Python-numpy%20%7C%20pandas-1E3D71) ![Excel](https://img.shields.io/badge/Excel-Dashboards-1E3D71) ![Model](https://img.shields.io/badge/Churn%20model-AUC%200.815-22BFD6) ![Validation](https://img.shields.io/badge/Validation-19%20of%2019%20passed-2E7D5B)
 
 > [!NOTE]
-> **Case study.** The data is modelled on the business of an IoT hardware and RMS cloud-subscription company, Teltonika IoT Group (Vilnius, Lithuania), to demonstrate the methods used. The data was created for this case-study project only.
-
-![Executive dashboard](executive_dashboard.png)
-
----
+> **Case study.** The data is modelled on the business of an IoT hardware and RMS cloud-subscription company, Teltonika IoT Group (Vilnius, Lithuania), to demonstrate the methods used we modelled this project based on case-study data only.
 
 ---
 
@@ -29,6 +25,7 @@
 13. [Limitations](#13-limitations)
 
 ---
+
 ## Results at a glance
 
 | Workstream | Headline result | Target | Status |
@@ -40,6 +37,11 @@
 | | Billing accuracy **96.7%** (from 90.8%) | 97% | 🟠 Close |
 | **3 · Churn prediction** | Hold-out **AUC 0.815**; top 20% of risk scores catch **53%** of churners | AUC ≥ 0.75 | ✅ On target |
 | | Top risk decile churns at **56%** vs 16% average; retention prize **€177K/yr** (scenario) | – | 📌 Test before claiming |
+
+----
+
+
+![Executive dashboard](executive_dashboard.png)
 
 
 ## 1. Business problem
