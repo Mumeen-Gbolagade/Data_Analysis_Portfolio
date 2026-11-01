@@ -106,11 +106,11 @@ INSERT INTO assumptions (param_name, param_value, note) VALUES
   ('assumed_save_rate',         0.20, 'Share of targeted high-risk churners a retention campaign might save (scenario input)');
 
 /* PostgreSQL load (repository root, in psql):
-   \copy stg_report_time_log      FROM 'data/raw/report_time_log.csv'      CSV HEADER
-   \copy stg_report_catalogue     FROM 'data/raw/report_catalogue.csv'     CSV HEADER
-   \copy stg_rms_accounts         FROM 'data/raw/rms_accounts.csv'         CSV HEADER NULL ''
-   \copy stg_recovery_log         FROM 'data/raw/recovery_log.csv'         CSV HEADER NULL ''
-   \copy stg_customers            FROM 'data/raw/customers.csv'            CSV HEADER
-   \copy stg_kpi_monthly_measures FROM 'data/raw/kpi_monthly_measures.csv' CSV HEADER
-   \copy model_coefficients       FROM 'data/processed/model_coefficients.csv' CSV HEADER
+   \copy stg_report_time_log      FROM 'report_time_log.csv'      CSV HEADER
+   \copy stg_report_catalogue     FROM 'report_catalogue.csv'     CSV HEADER
+   \copy stg_rms_accounts         FROM 'rms_accounts.csv'         CSV HEADER NULL ''
+   \copy stg_recovery_log         FROM 'recovery_log.csv'         CSV HEADER NULL ''
+   \copy stg_customers            FROM 'customers.csv'            CSV HEADER
+   \copy stg_kpi_monthly_measures FROM 'kpi_monthly_measures.csv' CSV HEADER
+   \copy model_coefficients       FROM 'outputs/model_coefficients.csv' CSV HEADER
 */

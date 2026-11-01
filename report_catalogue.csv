@@ -1,0 +1,9 @@
+Report,Runs_Per_Year,What_Was_Automated
+Weekly distributor sales (RUT/TRB/FMB),52,SQL view + scheduled refresh
+Monthly revenue close pack,12,Automated reconciliations + template
+RMS billing exceptions report,52,Rule-based exception query
+RMS churn & retention,12,Model scores refreshed weekly
+Executive KPI pack,12,Single KPI dashboard replaces slides
+Market performance review (EU/Americas/APAC),12,Parameterised dashboard page
+Partner & distributor funnel,52,Direct CRM connector
+Quarterly board pack,4,"Pre-built visuals, manual narrative kept"

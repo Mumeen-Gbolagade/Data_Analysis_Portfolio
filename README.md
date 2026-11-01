@@ -5,9 +5,9 @@
 ![SQL](https://img.shields.io/badge/SQL-SQLite%20%7C%20PostgreSQL-1E3D71) ![Python](https://img.shields.io/badge/Python-numpy%20%7C%20pandas-1E3D71) ![Excel](https://img.shields.io/badge/Excel-Dashboards-1E3D71) ![Model](https://img.shields.io/badge/Churn%20model-AUC%200.815-22BFD6) ![Validation](https://img.shields.io/badge/Validation-19%20of%2019%20passed-2E7D5B)
 
 > [!NOTE]
-> **Case study.** The data is modelled on the business of an IoT hardware and RMS cloud-subscription company, Teltonika IoT Group (Vilnius, Lithuania), to demonstrate the methods used. * This Data modelled based on case study Project only. 
+> **Case study.** The data is modelled on the business of an IoT hardware and RMS cloud-subscription company, Teltonika IoT Group (Vilnius, Lithuania), to demonstrate the methods used. The data was created for this case-study project only.
 
-![Executive dashboard](images/executive_dashboard.png)
+![Executive dashboard](executive_dashboard.png)
 
 ---
 
@@ -64,16 +64,16 @@ The business sells IoT hardware (routers, gateways and trackers) in 150+ markets
 
 ## 3. Data
 
-Five case-study datasets ([data dictionary](docs/data_dictionary.md)):
+Six case-study datasets ([data dictionary](data_dictionary.md)):
 
 | File | Rows | What it holds |
 |---|---|---|
-| [`report_time_log.csv`](data/raw/report_time_log.csv) | 208 | One row per report run: date, report, phase (manual / automated), hours, analyst |
-| [`report_catalogue.csv`](data/raw/report_catalogue.csv) | 8 | Each recurring report, runs per year and what was automated |
-| [`rms_accounts.csv`](data/raw/rms_accounts.csv) | 600 | Contract fee, discounts, renewal uplift, devices included vs connected, what was billed, failed payments |
-| [`recovery_log.csv`](data/raw/recovery_log.csv) | 132 | One case per leakage item: type, amount, action, status, month recovered |
-| [`customers.csv`](data/raw/customers.csv) | 2,000 | Model features, churn outcome and a 70/30 Train/Test split |
-| [`kpi_monthly_measures.csv`](data/raw/kpi_monthly_measures.csv) | 12 | Monthly billing accuracy, days to publish month-end, churn rate |
+| [`report_time_log.csv`](report_time_log.csv) | 208 | One row per report run: date, report, phase (manual / automated), hours, analyst |
+| [`report_catalogue.csv`](report_catalogue.csv) | 8 | Each recurring report, runs per year and what was automated |
+| [`rms_accounts.csv`](rms_accounts.csv) | 600 | Contract fee, discounts, renewal uplift, devices included vs connected, what was billed, failed payments |
+| [`recovery_log.csv`](recovery_log.csv) | 132 | One case per leakage item: type, amount, action, status, month recovered |
+| [`customers.csv`](customers.csv) | 2,000 | Model features, churn outcome and a 70/30 Train/Test split |
+| [`kpi_monthly_measures.csv`](kpi_monthly_measures.csv) | 12 | Monthly billing accuracy, days to publish month-end, churn rate |
 
 ## 4. KPI framework
 
@@ -94,7 +94,7 @@ Ten KPIs, each with a definition, baseline, target, owner and review cycle (work
 
 *A baseline of 0, 0.5 or 20% means no process existed (no audit, a random model, random targeting).*
 
-![KPI trends](images/exec_kpi_trends.png)
+![KPI trends](exec_kpi_trends.png)
 
 ## 5. Method, step by step
 
@@ -103,11 +103,11 @@ Ten KPIs, each with a definition, baseline, target, owner and review cycle (work
 | **1. Define** | Business context, problems and SMART objectives per workstream | Excel `01_Problem_Objectives` |
 | **2. Set KPIs** | 10 KPIs with baseline, target, owner and review cycle | Excel `02_KPI_Framework` |
 | **3. Load and clean** | Staging tables; phase labels standardised; text-stored numbers typed; leakage rules applied per account; customers scored | [`01`](01_create_tables.sql), [`02`](02_clean_transform.sql) |
-| **4. Check data quality** | 8 checks: counts, duplicate keys, catalogue coverage, referential integrity, rules-vs-log reconciliation, status completeness, value ranges, Train/Test balance | [`03`](sql/03_data_quality_checks.sql) · [log](docs/data_quality_log.md) |
-| **5. Analyse** | Time study · contract-vs-billing audit and recovery tracking · logistic-regression churn model with lift and scenario | [`04`](04_reporting_automation.sql)–[`07`](07_kpi_tracker.sql) · [`python/01`](python/01_train_churn_model.py) |
-| **6. Visualise** | Executive dashboard and revenue leakage dashboard, all linked to live formulas | [`excel/`](excel/) |
+| **4. Check data quality** | 8 checks: counts, duplicate keys, catalogue coverage, referential integrity, rules-vs-log reconciliation, status completeness, value ranges, Train/Test balance | [`03`](03_data_quality_checks.sql) · [log](data_quality_log.md) |
+| **5. Analyse** | Time study · contract-vs-billing audit and recovery tracking · logistic-regression churn model with lift and scenario | [`04`](04_reporting_automation.sql)–[`07`](07_kpi_tracker.sql) · [`01_train_churn_model.py`](01_train_churn_model.py) |
+| **6. Visualise** | Executive dashboard and revenue leakage dashboard, all linked to live formulas | [`Revenue_Leakage_Recovery_2025.xlsx`](Revenue_Leakage_Recovery_2025.xlsx) |
 | **7. Recommend and adapt** | Six actions tied to evidence, KPI and owner; re-prioritised by business strategy | Excel `09`, `10` |
-| **8. Validate** | 19 pipeline figures checked against the workbook; SQL run on SQLite and PostgreSQL | [`python/03`](python/03_validate.py) · [results](docs/validation_results.md) |
+| **8. Validate** | 19 pipeline figures checked against the workbook; SQL run on SQLite and PostgreSQL | [`03_validate.py`](03_validate.py) · [results](validation_results.md) |
 
 ## 6. Workstream 1: Reporting automation
 
@@ -138,7 +138,7 @@ Ten KPIs, each with a definition, baseline, target, owner and review cycle (work
 | 3 | Unbilled device overage | Expected overage = max(devices connected − included, 0) × rate; leak = (expected − billed overage) × months |
 | 4 | Failed payment not retried | Failed invoices that were never retried |
 
-![Revenue leakage dashboard](images/leakage_dashboard.png)
+![Revenue leakage dashboard](leakage_dashboard.png)
 
 **Findings**
 - **€125,485 leaking** across 132 cases on **123 of 600 accounts (21%)**, equal to **2.2%** of the €5.76m invoiced in the window. The rules total reconciles exactly with the recovery log.
@@ -157,7 +157,7 @@ Ten KPIs, each with a definition, baseline, target, owner and review cycle (work
 
 ## 8. Workstream 3: Predictive churn model
 
-**Method:** logistic regression fitted by Newton-Raphson on 70% of customers (1,397) and evaluated only on the 30% hold-out (603) the model never saw ([`python/01`](python/01_train_churn_model.py), [`sql/06`](sql/06_churn_model_evaluation.sql)).
+**Method:** logistic regression fitted by Newton-Raphson on 70% of customers (1,397) and evaluated only on the 30% hold-out (603) the model never saw ([`01_train_churn_model.py`](01_train_churn_model.py), [`06`](06_churn_model_evaluation.sql)).
 
 | Driver | Coefficient | z | Reading |
 |---|---:|---:|---|
@@ -176,7 +176,7 @@ Ten KPIs, each with a definition, baseline, target, owner and review cycle (work
 
 **Retention scenario (an input, not a result):** churners in deciles 1–2 carry €885K of annual revenue. If a campaign saved 20% of them, that is **€177K a year**. This must be proven with a control group before it is claimed.
 
-![Three workstreams](images/exec_workstreams.png)
+![Three workstreams](exec_workstreams.png)
 
 ## 9. Recommendations
 
@@ -186,14 +186,14 @@ Ten KPIs, each with a definition, baseline, target, owner and review cycle (work
 | 2 | Expired discounts and missed uplifts: €49,845 | ERP controls: auto-expire partner discounts; apply uplifts from the contract record; monthly exception report | 0 new pricing-leak cases per quarter | Revenue Ops + Billing | High |
 | 3 | Device overage is the largest leak: €39,570, 95% recovered | Bill overage monthly from RMS device counts; alert account managers at > 10% over licence to start an upgrade conversation | Unbilled overage €0; upgrade conversations logged | Revenue Ops + Account Mgmt | High |
 | 4 | Failed payments never retried: €36,070 (€840 still open) | Automated dunning (retry + reminder + card-update link) and a weekly ageing review | ≥ 75% recovered within 30 days | Finance (AR) | Medium |
-| 5 | AUC 0.82; top decile churns at 56% vs 16% | Weekly risk list to Customer Success; target deciles 1–2 first as a **controlled test** | Monthly churn ≤ 2.0%; save rate vs control | Customer Success + Analytics | High |
+| 5 | AUC 0.815; top decile churns at 56% vs 16% | Weekly risk list to Customer Success; target deciles 1–2 first as a **controlled test** | Monthly churn ≤ 2.0%; save rate vs control | Customer Success + Analytics | High |
 | 6 | Falling logins and tickets drive churn; annual contracts protect | In-app nudges when logins drop; incentivise annual contracts for high-risk monthly customers | Share on annual contracts; 30-day login trend | Product + Sales | Medium |
 
-![Key insights and actions](images/exec_actions.png)
+![Key insights and actions](exec_actions.png)
 
 **From root cause to control:** each leak type is closed with a standing control so new leakage trends to €0.
 
-![Root cause to control](images/leak_controls.png)
+![Root cause to control](leak_controls.png)
 
 ## 10. Adapting to business strategy
 
@@ -210,49 +210,68 @@ The same toolkit, re-prioritised for whichever strategy leadership chooses:
 
 ## 11. Validation
 
-- **19 of 19** headline figures from the SQL/Python pipeline match the Excel workbook exactly ([results](docs/validation_results.md)). The workbook's own 13 internal checks also pass.
+- **19 of 19** headline figures from the SQL/Python pipeline match the Excel workbook exactly ([results](validation_results.md)). The workbook's own 13 internal checks also pass.
 - The churn model was **refitted independently in Python**: coefficients match the workbook to 15 decimal places and the hold-out AUC is identical (0.815136).
 - All SQL runs unchanged on **SQLite 3.53 and PostgreSQL 16** with identical results. Testing caught three issues along the way (integer division returning a 0% recovery rate, `ROUND` on double precision in PostgreSQL, and a half-cent rounding difference between databases), all fixed and commented in the code.
 
 ## 12. Repository structure and how to run
 
 ```
-revenue-leakage-recovery-analytics/
+Data_Analysis_Portfolio/
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
-├── data/
-│   ├── raw/                      # 6 case-study source files
-│   └── processed/                # model coefficients + every query output
-├── sql/
-│   ├── 01_create_tables.sql
-│   ├── 02_clean_transform.sql    # leakage rules, churn scoring
-│   ├── 03_data_quality_checks.sql
-│   ├── 04_reporting_automation.sql
-│   ├── 05_revenue_leakage.sql
-│   ├── 06_churn_model_evaluation.sql
-│   └── 07_kpi_tracker.sql
-├── python/
-│   ├── 01_train_churn_model.py   # logistic regression (Newton-Raphson)
-│   ├── 02_build_database.py      # load + run all SQL, save outputs
-│   └── 03_validate.py            # 19 checks against the workbook
-├── excel/
-│   └── Revenue_Leakage_Recovery_2025.xlsx   # 15 tabs incl. both dashboards
-├── docs/
-│   ├── methodology.md
-│   ├── data_dictionary.md
-│   ├── data_quality_log.md
-│   └── validation_results.md
-└── images/                       # dashboard screenshots
+├── .gitignore
+│
+│   Data (6 case-study source files)
+├── report_time_log.csv
+├── report_catalogue.csv
+├── rms_accounts.csv
+├── recovery_log.csv
+├── customers.csv
+├── kpi_monthly_measures.csv
+│
+│   SQL (SQLite and PostgreSQL)
+├── 01_create_tables.sql
+├── 02_clean_transform.sql          # leakage rules, churn scoring
+├── 03_data_quality_checks.sql
+├── 04_reporting_automation.sql
+├── 05_revenue_leakage.sql
+├── 06_churn_model_evaluation.sql
+├── 07_kpi_tracker.sql
+│
+│   Python
+├── 01_train_churn_model.py         # logistic regression (Newton-Raphson)
+├── 02_build_database.py            # load + run all SQL, save outputs
+├── 03_validate.py                  # 19 checks against the workbook
+│
+│   Excel workbook (15 tabs incl. both dashboards)
+├── Revenue_Leakage_Recovery_2025.xlsx
+│
+│   Documentation
+├── methodology.md
+├── data_dictionary.md
+├── data_quality_log.md
+├── validation_results.md
+│
+│   Dashboard screenshots
+├── executive_dashboard.png
+├── leakage_dashboard.png
+├── exec_kpi_trends.png
+├── exec_workstreams.png
+├── exec_actions.png
+└── leak_controls.png
+
+Created when the scripts run (not committed): outputs/ and revenue_analytics.db
 ```
 
 ```bash
 pip install -r requirements.txt
-python python/01_train_churn_model.py   # fits the model, writes coefficients
-python python/02_build_database.py      # builds data/revenue_analytics.db and all outputs
-python python/03_validate.py            # checks results against the workbook
+python 01_train_churn_model.py   # fits the model, writes outputs/model_coefficients.csv
+python 02_build_database.py      # builds revenue_analytics.db and every query output in outputs/
+python 03_validate.py            # checks results against the workbook
 ```
-**PostgreSQL:** run `sql/01_create_tables.sql`, load the CSVs with the `\copy` commands at the end of that file, then run scripts 02 to 07.
+**PostgreSQL:** run `01_train_churn_model.py` first (it writes `outputs/model_coefficients.csv`), then `01_create_tables.sql`, load the CSVs with the `\copy` commands at the end of that file, and run scripts 02 to 07.
 
 **Workbook tabs:** `00_Read_Me` · `01_Problem_Objectives` · `02_KPI_Framework` · `03_Dashboard` · `03B_Leakage_Dashboard` · `04_Reporting_Time` · `05_Revenue_Leakage` · `06_Recovery_Log` · `07_Churn_Model` · `08_KPI_Tracker` · `09_Recommendations` · `10_Strategy_Playbook` · `11_Validation` · `12_Data_Dictionary` · `99_Chart_Data`
 
@@ -263,4 +282,4 @@ python python/03_validate.py            # checks results against the workbook
 
 ---
 
-**Author:** Mumeen Gbolagade, Data Analyst, London · [GitHub profile](https://github.com/mumeen-gbola) · [LinkedIn](https://www.linkedin.com/in/gbolagade-mumeen-7261641b6/)
+**Author:** Mumeen Gbolagade, Data Analyst, London · [GitHub profile](https://github.com/Mumeen-Gbolagade) · [LinkedIn](https://www.linkedin.com/in/gbolagade-mumeen-7261641b6/)

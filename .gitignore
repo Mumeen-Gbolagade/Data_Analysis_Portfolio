@@ -4,4 +4,6 @@ __pycache__/
 .DS_Store
 ~$*.xlsx
 # rebuildable database
-data/revenue_analytics.db
+revenue_analytics.db
+# rebuilt by the scripts
+outputs/

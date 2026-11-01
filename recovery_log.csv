@@ -1,0 +1,133 @@
+Case_ID,Account_ID,Leakage_Type,Amount_Identified,Action,Status,Recovery_Month
+RC-001,AC-3000,Missed renewal price uplift,531,Apply contractual uplift; invoice difference,Recovered,2025-06-01
+RC-002,AC-3000,Unbilled device overage,1320,True-up invoice for devices above RMS licence,Recovered,2025-06-01
+RC-003,AC-3005,Unbilled device overage,150,True-up invoice for devices above RMS licence,Recovered,2025-04-01
+RC-004,AC-3008,Unbilled device overage,3780,True-up invoice for devices above RMS licence,Recovered,2025-07-01
+RC-005,AC-3013,Unbilled device overage,150,True-up invoice for devices above RMS licence,Recovered,2025-05-01
+RC-006,AC-3019,Unbilled device overage,150,True-up invoice for devices above RMS licence,Recovered,2025-05-01
+RC-007,AC-3023,Missed renewal price uplift,144,Apply contractual uplift; invoice difference,Recovered,2025-05-01
+RC-008,AC-3024,Unbilled device overage,360,True-up invoice for devices above RMS licence,Recovered,2025-05-01
+RC-009,AC-3043,Missed renewal price uplift,117,Apply contractual uplift; invoice difference,Recovered,2025-04-01
+RC-010,AC-3054,Missed renewal price uplift,126,Apply contractual uplift; invoice difference,Recovered,2025-06-01
+RC-011,AC-3054,Failed payment not retried,840,Dunning sequence + payment method update,In progress,
+RC-012,AC-3058,Failed payment not retried,840,Dunning sequence + payment method update,Recovered,2025-07-01
+RC-013,AC-3064,Expired partner discount still applied,492,Remove expired partner discount; back-bill per contract,Recovered,2025-06-01
+RC-014,AC-3072,Unbilled device overage,150,True-up invoice for devices above RMS licence,Recovered,2025-04-01
+RC-015,AC-3077,Unbilled device overage,1320,True-up invoice for devices above RMS licence,Recovered,2025-07-01
+RC-016,AC-3079,Failed payment not retried,3360,Dunning sequence + payment method update,Recovered,2025-04-01
+RC-017,AC-3081,Unbilled device overage,600,True-up invoice for devices above RMS licence,Recovered,2025-07-01
+RC-018,AC-3088,Missed renewal price uplift,135,Apply contractual uplift; invoice difference,Recovered,2025-06-01
+RC-019,AC-3091,Expired partner discount still applied,1740,Remove expired partner discount; back-bill per contract,Recovered,2025-07-01
+RC-020,AC-3093,Unbilled device overage,90,True-up invoice for devices above RMS licence,Recovered,2025-06-01
+RC-021,AC-3097,Expired partner discount still applied,1776,Remove expired partner discount; back-bill per contract,Recovered,2025-07-01
+RC-022,AC-3098,Unbilled device overage,1200,True-up invoice for devices above RMS licence,Recovered,2025-05-01
+RC-023,AC-3103,Failed payment not retried,1440,Dunning sequence + payment method update,Recovered,2025-03-01
+RC-024,AC-3106,Missed renewal price uplift,468,Apply contractual uplift; invoice difference,In progress,
+RC-025,AC-3111,Failed payment not retried,3300,Dunning sequence + payment method update,Recovered,2025-07-01
+RC-026,AC-3113,Unbilled device overage,990,True-up invoice for devices above RMS licence,Recovered,2025-05-01
+RC-027,AC-3121,Unbilled device overage,1080,True-up invoice for devices above RMS licence,Recovered,2025-05-01
+RC-028,AC-3128,Missed renewal price uplift,441,Apply contractual uplift; invoice difference,Recovered,2025-05-01
+RC-029,AC-3129,Missed renewal price uplift,126,Apply contractual uplift; invoice difference,Recovered,2025-07-01
+RC-030,AC-3132,Missed renewal price uplift,120,Apply contractual uplift; invoice difference,Recovered,2025-07-01
+RC-031,AC-3144,Unbilled device overage,600,True-up invoice for devices above RMS licence,Recovered,2025-05-01
+RC-032,AC-3159,Expired partner discount still applied,480,Remove expired partner discount; back-bill per contract,Recovered,2025-03-01
+RC-033,AC-3164,Expired partner discount still applied,1848,Remove expired partner discount; back-bill per contract,Recovered,2025-03-01
+RC-034,AC-3164,Unbilled device overage,1080,True-up invoice for devices above RMS licence,Recovered,2025-06-01
+RC-035,AC-3165,Expired partner discount still applied,1824,Remove expired partner discount; back-bill per contract,Recovered,2025-05-01
+RC-036,AC-3166,Missed renewal price uplift,114,Apply contractual uplift; invoice difference,Recovered,2025-07-01
+RC-037,AC-3168,Unbilled device overage,300,True-up invoice for devices above RMS licence,Recovered,2025-06-01
+RC-038,AC-3170,Missed renewal price uplift,132,Apply contractual uplift; invoice difference,Recovered,2025-03-01
+RC-039,AC-3172,Missed renewal price uplift,117,Apply contractual uplift; invoice difference,Recovered,2025-05-01
+RC-040,AC-3172,Failed payment not retried,780,Dunning sequence + payment method update,Recovered,2025-06-01
+RC-041,AC-3177,Unbilled device overage,3870,True-up invoice for devices above RMS licence,Recovered,2025-03-01
+RC-042,AC-3189,Unbilled device overage,960,True-up invoice for devices above RMS licence,Written off,
+RC-043,AC-3190,Unbilled device overage,600,True-up invoice for devices above RMS licence,Recovered,2025-05-01
+RC-044,AC-3191,Failed payment not retried,470,Dunning sequence + payment method update,Recovered,2025-06-01
+RC-045,AC-3194,Expired partner discount still applied,552,Remove expired partner discount; back-bill per contract,Recovered,2025-04-01
+RC-046,AC-3208,Expired partner discount still applied,468,Remove expired partner discount; back-bill per contract,Recovered,2025-07-01
+RC-047,AC-3209,Unbilled device overage,360,True-up invoice for devices above RMS licence,Recovered,2025-03-01
+RC-048,AC-3214,Failed payment not retried,800,Dunning sequence + payment method update,Recovered,2025-05-01
+RC-049,AC-3219,Missed renewal price uplift,144,Apply contractual uplift; invoice difference,Recovered,2025-06-01
+RC-050,AC-3223,Unbilled device overage,150,True-up invoice for devices above RMS licence,Recovered,2025-03-01
+RC-051,AC-3227,Unbilled device overage,150,True-up invoice for devices above RMS licence,Recovered,2025-05-01
+RC-052,AC-3228,Expired partner discount still applied,7908,Remove expired partner discount; back-bill per contract,Recovered,2025-07-01
+RC-053,AC-3230,Unbilled device overage,360,True-up invoice for devices above RMS licence,Recovered,2025-04-01
+RC-054,AC-3231,Failed payment not retried,3540,Dunning sequence + payment method update,Recovered,2025-07-01
+RC-055,AC-3240,Expired partner discount still applied,564,Remove expired partner discount; back-bill per contract,Recovered,2025-07-01
+RC-056,AC-3241,Unbilled device overage,300,True-up invoice for devices above RMS licence,Recovered,2025-04-01
+RC-057,AC-3242,Missed renewal price uplift,117,Apply contractual uplift; invoice difference,Recovered,2025-05-01
+RC-058,AC-3246,Expired partner discount still applied,576,Remove expired partner discount; back-bill per contract,Recovered,2025-03-01
+RC-059,AC-3258,Expired partner discount still applied,1800,Remove expired partner discount; back-bill per contract,Recovered,2025-07-01
+RC-060,AC-3262,Unbilled device overage,840,True-up invoice for devices above RMS licence,Recovered,2025-05-01
+RC-061,AC-3262,Failed payment not retried,1510,Dunning sequence + payment method update,Recovered,2025-05-01
+RC-062,AC-3263,Missed renewal price uplift,141,Apply contractual uplift; invoice difference,Recovered,2025-03-01
+RC-063,AC-3273,Unbilled device overage,240,True-up invoice for devices above RMS licence,Recovered,2025-04-01
+RC-064,AC-3278,Missed renewal price uplift,435,Apply contractual uplift; invoice difference,Written off,
+RC-065,AC-3284,Expired partner discount still applied,444,Remove expired partner discount; back-bill per contract,Recovered,2025-03-01
+RC-066,AC-3289,Unbilled device overage,720,True-up invoice for devices above RMS licence,Recovered,2025-06-01
+RC-067,AC-3294,Unbilled device overage,300,True-up invoice for devices above RMS licence,Recovered,2025-07-01
+RC-068,AC-3305,Missed renewal price uplift,129,Apply contractual uplift; invoice difference,Recovered,2025-03-01
+RC-069,AC-3307,Missed renewal price uplift,444,Apply contractual uplift; invoice difference,Recovered,2025-03-01
+RC-070,AC-3315,Missed renewal price uplift,144,Apply contractual uplift; invoice difference,Recovered,2025-05-01
+RC-071,AC-3320,Missed renewal price uplift,123,Apply contractual uplift; invoice difference,Recovered,2025-07-01
+RC-072,AC-3320,Failed payment not retried,820,Dunning sequence + payment method update,Recovered,2025-07-01
+RC-073,AC-3322,Failed payment not retried,3400,Dunning sequence + payment method update,Recovered,2025-07-01
+RC-074,AC-3323,Unbilled device overage,1320,True-up invoice for devices above RMS licence,Recovered,2025-05-01
+RC-075,AC-3325,Unbilled device overage,960,True-up invoice for devices above RMS licence,Recovered,2025-05-01
+RC-076,AC-3329,Unbilled device overage,960,True-up invoice for devices above RMS licence,Recovered,2025-05-01
+RC-077,AC-3330,Missed renewal price uplift,450,Apply contractual uplift; invoice difference,Recovered,2025-07-01
+RC-078,AC-3331,Failed payment not retried,3120,Dunning sequence + payment method update,Recovered,2025-07-01
+RC-079,AC-3334,Unbilled device overage,1080,True-up invoice for devices above RMS licence,Recovered,2025-03-01
+RC-080,AC-3340,Missed renewal price uplift,492,Apply contractual uplift; invoice difference,Recovered,2025-05-01
+RC-081,AC-3352,Failed payment not retried,920,Dunning sequence + payment method update,Recovered,2025-03-01
+RC-082,AC-3358,Unbilled device overage,720,True-up invoice for devices above RMS licence,Recovered,2025-06-01
+RC-083,AC-3358,Failed payment not retried,1720,Dunning sequence + payment method update,Recovered,2025-07-01
+RC-084,AC-3364,Unbilled device overage,300,True-up invoice for devices above RMS licence,Recovered,2025-07-01
+RC-085,AC-3376,Missed renewal price uplift,135,Apply contractual uplift; invoice difference,In progress,
+RC-086,AC-3377,Missed renewal price uplift,1875,Apply contractual uplift; invoice difference,Recovered,2025-07-01
+RC-087,AC-3384,Failed payment not retried,6640,Dunning sequence + payment method update,Recovered,2025-05-01
+RC-088,AC-3385,Missed renewal price uplift,417,Apply contractual uplift; invoice difference,Recovered,2025-06-01
+RC-089,AC-3396,Expired partner discount still applied,564,Remove expired partner discount; back-bill per contract,Recovered,2025-03-01
+RC-090,AC-3398,Missed renewal price uplift,486,Apply contractual uplift; invoice difference,Recovered,2025-05-01
+RC-091,AC-3398,Unbilled device overage,480,True-up invoice for devices above RMS licence,Recovered,2025-07-01
+RC-092,AC-3401,Unbilled device overage,480,True-up invoice for devices above RMS licence,Recovered,2025-04-01
+RC-093,AC-3406,Missed renewal price uplift,414,Apply contractual uplift; invoice difference,Written off,
+RC-094,AC-3407,Missed renewal price uplift,510,Apply contractual uplift; invoice difference,Recovered,2025-05-01
+RC-095,AC-3413,Unbilled device overage,150,True-up invoice for devices above RMS licence,Recovered,2025-03-01
+RC-096,AC-3424,Unbilled device overage,600,True-up invoice for devices above RMS licence,Recovered,2025-04-01
+RC-097,AC-3432,Unbilled device overage,1080,True-up invoice for devices above RMS licence,In progress,
+RC-098,AC-3436,Expired partner discount still applied,7140,Remove expired partner discount; back-bill per contract,Recovered,2025-07-01
+RC-099,AC-3444,Failed payment not retried,920,Dunning sequence + payment method update,Recovered,2025-07-01
+RC-100,AC-3445,Missed renewal price uplift,141,Apply contractual uplift; invoice difference,Recovered,2025-04-01
+RC-101,AC-3446,Unbilled device overage,300,True-up invoice for devices above RMS licence,Recovered,2025-03-01
+RC-102,AC-3453,Missed renewal price uplift,426,Apply contractual uplift; invoice difference,Recovered,2025-04-01
+RC-103,AC-3459,Unbilled device overage,3420,True-up invoice for devices above RMS licence,Recovered,2025-06-01
+RC-104,AC-3465,Missed renewal price uplift,444,Apply contractual uplift; invoice difference,Recovered,2025-05-01
+RC-105,AC-3466,Unbilled device overage,2340,True-up invoice for devices above RMS licence,Recovered,2025-07-01
+RC-106,AC-3473,Missed renewal price uplift,108,Apply contractual uplift; invoice difference,Recovered,2025-05-01
+RC-107,AC-3476,Missed renewal price uplift,117,Apply contractual uplift; invoice difference,Recovered,2025-03-01
+RC-108,AC-3486,Expired partner discount still applied,1680,Remove expired partner discount; back-bill per contract,Recovered,2025-03-01
+RC-109,AC-3490,Unbilled device overage,480,True-up invoice for devices above RMS licence,Recovered,2025-07-01
+RC-110,AC-3499,Failed payment not retried,450,Dunning sequence + payment method update,Recovered,2025-05-01
+RC-111,AC-3502,Expired partner discount still applied,444,Remove expired partner discount; back-bill per contract,Recovered,2025-06-01
+RC-112,AC-3503,Missed renewal price uplift,528,Apply contractual uplift; invoice difference,Recovered,2025-05-01
+RC-113,AC-3504,Unbilled device overage,150,True-up invoice for devices above RMS licence,Recovered,2025-05-01
+RC-114,AC-3504,Failed payment not retried,410,Dunning sequence + payment method update,Recovered,2025-05-01
+RC-115,AC-3506,Failed payment not retried,430,Dunning sequence + payment method update,Recovered,2025-04-01
+RC-116,AC-3509,Unbilled device overage,300,True-up invoice for devices above RMS licence,Recovered,2025-03-01
+RC-117,AC-3515,Expired partner discount still applied,456,Remove expired partner discount; back-bill per contract,Recovered,2025-04-01
+RC-118,AC-3516,Expired partner discount still applied,504,Remove expired partner discount; back-bill per contract,Recovered,2025-03-01
+RC-119,AC-3517,Unbilled device overage,150,True-up invoice for devices above RMS licence,Recovered,2025-04-01
+RC-120,AC-3527,Unbilled device overage,1320,True-up invoice for devices above RMS licence,Recovered,2025-07-01
+RC-121,AC-3538,Missed renewal price uplift,2043,Apply contractual uplift; invoice difference,Recovered,2025-06-01
+RC-122,AC-3540,Failed payment not retried,360,Dunning sequence + payment method update,Recovered,2025-06-01
+RC-123,AC-3549,Expired partner discount still applied,1968,Remove expired partner discount; back-bill per contract,Recovered,2025-03-01
+RC-124,AC-3550,Expired partner discount still applied,1668,Remove expired partner discount; back-bill per contract,Recovered,2025-05-01
+RC-125,AC-3555,Missed renewal price uplift,504,Apply contractual uplift; invoice difference,Recovered,2025-06-01
+RC-126,AC-3558,Unbilled device overage,300,True-up invoice for devices above RMS licence,Recovered,2025-06-01
+RC-127,AC-3559,Unbilled device overage,150,True-up invoice for devices above RMS licence,Recovered,2025-05-01
+RC-128,AC-3560,Expired partner discount still applied,468,Remove expired partner discount; back-bill per contract,Recovered,2025-07-01
+RC-129,AC-3569,Missed renewal price uplift,474,Apply contractual uplift; invoice difference,Recovered,2025-07-01
+RC-130,AC-3578,Expired partner discount still applied,528,Remove expired partner discount; back-bill per contract,Written off,
+RC-131,AC-3581,Missed renewal price uplift,141,Apply contractual uplift; invoice difference,Recovered,2025-07-01
+RC-132,AC-3599,Unbilled device overage,360,True-up invoice for devices above RMS licence,Recovered,2025-04-01
