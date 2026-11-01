@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+~$*.xlsx
+# rebuildable database
+data/revenue_analytics.db
